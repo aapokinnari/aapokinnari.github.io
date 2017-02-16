@@ -98,7 +98,6 @@ p {
 }
 
 .resize {
-    position: absolute;
-    left: 88%;
-    top: 50%;
+margin-left: 90%;
+margin-top: 25px;
 }
