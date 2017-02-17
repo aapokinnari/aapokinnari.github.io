@@ -1,5 +1,12 @@
+var scale = Math.min( 
+  availableWidth / contentWidth, 
+  availableHeight / contentHeight 
+);
+
+
 body {
     color: #fff;
+        min-width: 100%;
 }
 .container {
     position: absolute;
@@ -7,16 +14,18 @@ body {
     top: 0;
     width: 100%;
 }
-
 .waterfall {
-    height: 100%;
+    
+    height: 572px;
     width: 100%;
     background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://en.adrehydropower.com/wp-content/uploads/2014/06/immagini-cascate-5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
 }
 .navigation {
+    position: relative;
     font-size: em(40);
     background-color: #333;
    /** position: fixed;**/
@@ -56,28 +65,36 @@ body {
 }
 
 .text {
-    padding-top: 100px;
+    margin-left: 23%;
+    width: 700px;
+    padding-top: 50px;
     text-align: center;
     color: #fff;
+    padding-bottom: 100px;
 }
 
  h1 {
      font-size: 40px;
-     padding-bottom: 10px;
+     color: #fff;
     }
 p {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 #rectangle {
+    position: relative;
+    top: 0px;
     width: 100%;
     height: 100px;
     background: #333;
 }
 
 #rectangle2 {
+    content: normal;
+    position: relative;
+    text-align: center;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background: #6FB9C4;
 }
 
@@ -88,16 +105,43 @@ p {
     border-top: 15px solid #333;
     border-left: 15px solid #6FB9C4;
     border-right: 15px solid #6FB9C4;
-    position:absolute;
+    position:relative;
     left: 50%;
 }
 
-.text2 {
-    position: absolute;
-    left: 42%;
-}
 
 .resize {
-margin-left: 90%;
+margin-left: 1150px;
 margin-top: 25px;
+}
+
+h3 {
+    padding-top: 0;
+}
+
+
+.laatikko {
+   margin-left: 250px;
+    margin-top: -150px;
+}
+
+
+.teksti {
+    width: 300px;
+    margin-left: 30%;
+}
+
+.laatikko2 {
+    margin-top: -300px;
+    margin-left: -300px;
+}
+
+.teksti2 {
+    max-width: 300px;
+    margin-left: 45%;
+}
+
+.Otsikko3 {
+    margin-top: 0px;
+    text-align: center;
 }
