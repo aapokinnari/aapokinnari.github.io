@@ -8,10 +8,12 @@ body {
     top: 0;
     width: 100%
 }
-.waterfall {
+.background {
+    padding-bottom: 100px;
+    padding-top: 100px;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://en.adrehydropower.com/wp-content/uploads/2014/06/immagini-cascate-5.jpg");
+    background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://umad.com/img/2015/5/waterfall-gif-8893-9251-hd-wallpapers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,41 +57,27 @@ body {
     color: #ff0000;
 }
 
-.background {
-    background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://umad.com/img/2015/5/waterfall-gif-8893-9251-hd-wallpapers.jpg");
-    height: 768px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center; 
-}
-
 .rectangle {
     position: relative;
-    top: 640px;
     width: 100%;
     height: 100px;
     background: #333;
 }
 
 footer {
-    padding-top: 3%;
+    padding-top: 35px;
     font-family: "Indie Flower";
     text-align: center;
 }
 
 p {
     font-family: "Indie Flower";
-    margin-top: 150px;
     text-align: center;
     font-size: 40px;
+    padding-top: 50px;
 }
 
 h1 {
     font-family: "Indie Flower";
     text-align: center;
-    margin-top: 150px;
 }
