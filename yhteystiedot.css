@@ -1,5 +1,3 @@
-
-
 body {
     color: #fff;
         min-width: 100%;
@@ -11,7 +9,6 @@ body {
     width: 100%
 }
 .waterfall {
-    
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://en.adrehydropower.com/wp-content/uploads/2014/06/immagini-cascate-5.jpg");
@@ -58,100 +55,41 @@ body {
     color: #ff0000;
 }
 
-.text {
-    font-family: 'Indie Flower', serif;
-    margin-left: 23%;
-    width: 50%;
-    padding-top: 50px;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 100px;
+.background {
+    background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://umad.com/img/2015/5/waterfall-gif-8893-9251-hd-wallpapers.jpg");
+    height: 768px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center; 
 }
 
- h1 {
-    font-family: "Indie Flower";
-     font-size: 40px;
-     color: #fff;
-    }
-p {
-    font-family: "Indie Flower";
-    padding-bottom: 0px;
-}
-
-#rectangle {
+.rectangle {
     position: relative;
-    top: 0px;
+    top: 640px;
     width: 100%;
     height: 100px;
     background: #333;
 }
 
-#rectangle2 {
-    font-family: "Indie Flower";
-    content: normal;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    background: #6FB9C4;
-}
-
-#triangle {
-    height: 0px;
-    width: 0px;
-    background: #6FB9C4;
-    border-top: 15px solid #333;
-    border-left: 15px solid #6FB9C4;
-    border-right: 15px solid #6FB9C4;
-    position:relative;
-    left: 50%;
-}
-
-
-.resize {
-width: 10%;
-min-width: 40px;
-margin-left: 90%;
-margin-top: -50px;
-}
-
-h3 {
-    font-family: "Indie Flower";
-    padding-top: 0;
-}
-
-
-.laatikko {
-   margin-left: 250px;
-    margin-top: -300px;
-}
-
-
-.teksti {
-    font-family: "Indie Flower";
-    width: 22%;
-    max-height:40%;
-    margin-left: 30%;
-}
-
-.laatikko2 {
-    margin-top: -600px;
-    margin-left: -300px;
-}
-
-.teksti2 {
-    font-family: "Indie Flower";
-    width: 22%;
-    max-height:40%;
-    margin-left: 45%;
-}
-
-.Otsikko3 {
-    font-family: "Indie Flower";
-    margin-top: 0px;
-    text-align: center;
-}
-
 footer {
+    padding-top: 3%;
+    font-family: "Indie Flower";
     text-align: center;
-    padding-top: 2%;
+}
+
+p {
+    font-family: "Indie Flower";
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+    font-family: "Indie Flower";
+    text-align: center;
+    margin-top: 150px;
 }
