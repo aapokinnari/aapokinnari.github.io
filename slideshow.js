@@ -34,7 +34,7 @@ function nextSlide() {
 
 var myVar = setInterval(function () {
         nextSlide();
-    }, 1000);
+    }, 3000);
 
 
 function previousSlide() {
