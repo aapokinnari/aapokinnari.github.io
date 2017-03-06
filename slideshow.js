@@ -8,7 +8,7 @@ function display() {
         $('#kolmas').html(data[uutinen].päivämäärä);
     }); 
     setValue();
-};
+}
 
 function setValue() {
 console.log( uutinen );
@@ -16,17 +16,11 @@ localStorage.setItem( 'dia', uutinen );
 }
 
 
-function animate() {
-    $('#animaatio').fadeIn(500);
-    $('#animaatio').delay(2500);
-    $('#animaatio').fadeOut(500);
-}
-
-var isPause = false
+var isPause = false;
 
 function nextSlide() {
-    'use strict'
-    if(uutinen == 0) {
+    'use strict';
+    if(uutinen === 0) {
         uutinen = 1;
     }
     else if(uutinen == 1){
@@ -35,21 +29,16 @@ function nextSlide() {
     else {
         uutinen = 0;
     }
-    animate();
     display();
-};
+}
 
 var myVar = setInterval(function () {
         nextSlide();
-    }, 3000);
+    }, 1000);
 
-function switchAt() {
-    'use strict'
-    myVar;
-}
 
 function previousSlide() {
-    'use strict'
+    'use strict';
     if(uutinen == 1) {
         uutinen = 0;
     }
@@ -59,7 +48,6 @@ function previousSlide() {
     else{
         uutinen = 2;
     }
-    animate();
     display();
 }
 
@@ -73,18 +61,17 @@ $("#pause span").text("Play");
 }
 
 function pause(){
-if(isPause == false){
+if(isPause === false){
 change();
 window.clearInterval(myVar);
 }
     else{
         myVar = setInterval(function () {
-        animate();
         nextSlide();
     }, 3000);   
         change();
     }
-    isPause = !isPause
+    isPause = !isPause;
 }
 
 document.getElementById("previous").addEventListener("click", previousSlide);
