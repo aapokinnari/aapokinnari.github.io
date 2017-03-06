@@ -20,7 +20,8 @@ function guessTheNumber() {
              number = getRandomInteger(1, 10);
         }
             else {
-                alert("Väärin meni, Oikea numero oli: " + num2);
+                alert("Väärin meni, Oikea numero oli: " + number
+                     );
                 
                  number = getRandomInteger(1, 10);
             }
