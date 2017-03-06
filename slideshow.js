@@ -29,6 +29,8 @@ function nextSlide() {
     else {
         uutinen = 0;
     }
+    $(".xx").fadeOut("fast")
+    $(".xx").fadeIn()
     display();
 }
 
@@ -48,6 +50,8 @@ function previousSlide() {
     else{
         uutinen = 2;
     }
+    $(".xx").fadeOut("fast")
+    $(".xx").fadeIn()
     display();
 }
 
