@@ -79,6 +79,15 @@ p {
     padding-bottom: 0px;
 }
 
+#link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#link:hover {
+    color: #333;
+}
+
 #rectangle {
     position: relative;
     top: 0px;
