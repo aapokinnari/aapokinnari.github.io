@@ -97,6 +97,24 @@ p {
     background: #6FB9C4;
 }
 
+#rectangle3 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 10px;
+    background: #333;
+}
+
+#rectangle4 {
+    font-family: "Indie Flower";
+    color: #white;
+    top: 0px;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+
 #triangle {
     height: 0px;
     width: 0px;
@@ -108,7 +126,9 @@ p {
     left: 50%;
 }
 
-
+#video {
+    margin-top: 5%;
+}
 .resize {
 width: 10%;
 min-width: 40px;
@@ -172,7 +192,6 @@ margin-left: 0%;
 height: 100px;
 width: 100%;
 position: relative;
-border-radius: 20px;
 }
 
 #next {
