@@ -1,24 +1,16 @@
 body {
-        background: #6FB9C4;
         min-width: 100%;
+        background: #6FB9C4;
+        max-width: 500px;
 }
+
 .container {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%
 }
-.background {
-    padding-bottom: 100px;
-    padding-top: 100px;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(26,26,26,0.7),rgba(26,26,26,0.7)), url("http://umad.com/img/2015/5/waterfall-gif-8893-9251-hd-wallpapers.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
+/*
 .navigation {
     position: relative;
     width:100%;
@@ -56,9 +48,10 @@ body {
 .navigation summary:hover{
     color: #ff0000;
 }
-
-.rectangle {
+*/
+#rectangle {
     position: relative;
+    top: 600px;
     width: 100%;
     height: 100px;
     background: #333;
@@ -68,17 +61,5 @@ footer {
     padding-top: 35px;
     font-family: "Indie Flower";
     text-align: center;
-}
-
-p {
-    font-family: "Indie Flower";
-    text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
-    height: 100%;
-}
-
-h1 {
-    font-family: "Indie Flower";
-    text-align: center;
+    color: white;
 }
