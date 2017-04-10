@@ -25,9 +25,9 @@
     var yCoord = function yCoords(){
     var b = 0
     if(enemies.length == 0){b = newInt(20,105)}
-    else if(enemies.length == 1){b = newInt(106,190)}
-    else if(enemies.length == 2){b = newInt(191,275)}
-    else{b = newInt(276,360)}
+    else if(enemies.length == 1){b = newInt(146,190)}
+    else if(enemies.length == 2){b = newInt(231,275)}
+    else{b = newInt(316,360)}
     return b
     }
 
