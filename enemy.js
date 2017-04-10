@@ -7,12 +7,9 @@
     
     function newEnemy(){
         var coordx = newInt(20, 360);
-        var coordy = newInt(20, 360);
-       /* while(checkCoords(coordy)==false){
-            coordy=newInt(20, 360);
-        }*/
+        var coordy = yCoord();
+        console.log(coordy)
         var Esped = 1;
-      // var newY = checkCoords(coordy)
         var a = {
         x: coordx,
         y: coordy,
@@ -25,17 +22,13 @@
     enemies.push(a);
 }
 
-    function checkCoords(y){
-    var isOk = false
-    for(x = 0; x < enemies.length; x++){
-    if(y<enemies[x].y+enemies[x].h ||y>enemies[x].y+enemies[x].h){
-    isOk=true
-    }
-    }
-    if(isOk){return true}
-    else{
-    return false
-    }
+    var yCoord = function yCoords(){
+    var b = 0
+    if(enemies.length == 0){b = newInt(20,105)}
+    else if(enemies.length == 1){b = newInt(106,190)}
+    else if(enemies.length == 2){b = newInt(191,275)}
+    else{b = newInt(276,360)}
+    return b
     }
 
     function moveEnemy(target) {
