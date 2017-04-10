@@ -8,8 +8,11 @@
     function newEnemy(){
         var coordx = newInt(20, 360);
         var coordy = newInt(20, 360);
-        var Esped = 3;
-     //   var newY = checkCoords(coordy)
+       /* while(checkCoords(coordy)==false){
+            coordy=newInt(20, 360);
+        }*/
+        var Esped = 1;
+      // var newY = checkCoords(coordy)
         var a = {
         x: coordx,
         y: coordy,
@@ -23,28 +26,16 @@
 }
 
     function checkCoords(y){
-    var ok = true
-    if(y<player.y+10 && y > player.y-10){
-    ok = false;
+    var isOk = false
+    for(x = 0; x < enemies.length; x++){
+    if(y<enemies[x].y+enemies[x].h ||y>enemies[x].y+enemies[x].h){
+    isOk=true
     }
-    for(var s = 0; s < enemies.length;){
-        if(y<enemies[s].y+10 && y>enemies[s].y-10){
-        ok=false;
-        s++;
-        };
-    };
-        if(ok==true){return y}
-        else{
-            var a = newInt(10, 180)
-            return arguments.callee(a)}
-    };
-
-
-    function moveEnemies() {
-        for(var i = 0; i < enemies.length;){
-        enemies[i].x = enemies[i].x - enemies[i].speed;
-        i++;
-        };
+    }
+    if(isOk){return true}
+    else{
+    return false
+    }
     }
 
     function moveEnemy(target) {

@@ -3,40 +3,68 @@
         y: 180,
         w: 40,
         h: 40,
-        speed: 1
+        speed: 5
     };
 
  var keysDown = {};
 
 function movePlayer(direction){
+        var oldX = player.x
+        var oldY = player.y
         switch (direction){
             case "left":
                 player.x -= player.speed;
-                if(player.x<20){
-                    player.x = 20
+                if(player.x<0){
+                    player.x = 0
+                }
+                if(player.x == enemies[0].x+enemies[0].w){
+                  console.log(player.x)    
+                }
+                for(k = 0; k < enemies.length; k++){
+                     var distanceX = player.x-enemies[k].x
+                     if(distanceX< enemies[k].w&&distanceX>0&&player.y+player.h>enemies[k].y&&player.y<enemies[k].y+enemies[k].h){
+                        player.x = oldX;
+                         console.log(player.y)
+                     }
                 }
                 break;
             case "right":
                 player.x += player.speed;
-                if(player.x>380){
-                    player.x = 380
+                if(player.x>360){
+                    player.x = 360
+                }
+                for(k = 0; k < enemies.length; k++){
+                     var distanceX = enemies[k].x - player.x
+                     if(distanceX <player.w && distanceX>0&&player.y+player.h>enemies[k].y&&player.y<enemies[k].y+enemies[k].h){
+                        player.x = oldX;
+                     }
                 }
                 break;
             case "up":
                 player.y -= player.speed;
-                if(player.y<20){
-                    player.y = 20
+                if(player.y<0){
+                    player.y = 0
+                }
+                for(k = 0; k < enemies.length; k++){
+                     var distanceY = player.y - enemies[k].y
+                     if(distanceY < enemies[k].h&&distanceY>0&&player.x>enemies[k].x-player.w&&player.x<enemies[k].x+enemies[k].w){
+                        player.y =  oldY;
+                     }
                 }
                 break;
             case "down":
                 player.y += player.speed;
-                if(player.y>380){
-                    player.y = 380
+                if(player.y>360){
+                    player.y = 360
+                }
+                for(k = 0; k < enemies.length; k++){
+                     var distanceY = enemies[k].y - player.y
+                     if(distanceY < enemies[k].h&&distanceY>0&&player.x>enemies[k].x-player.w&&player.x<enemies[k].x+enemies[k].w){
+                        player.y = oldY;
+                     }
                 }
                 break;
         }
-        console.log(player.x)
-    console.log(player.y)
     }
 
 function drawPlayer(context) {

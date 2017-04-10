@@ -21,8 +21,8 @@ $(document).ready(function(){
     ctx.fillStyle = '#000000';
     ctx.fillRect(0,0,400,400);
     
-    drawPlayer(ctx);
     drawEnemies(ctx);
+    drawPlayer(ctx);
     };
     
     function update(){
