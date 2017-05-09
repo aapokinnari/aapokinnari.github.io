@@ -247,13 +247,13 @@ var goingUp2 = true;
     
 function moveWall(){
     if(!goingUp){
-    greatWall.y = greatWall.y+4
+    greatWall.y = greatWall.y+4+count/10
     if(greatWall.y>600){
         goingUp = true
     }
     }
     else if(goingUp){
-        greatWall.y = greatWall.y-4
+        greatWall.y = greatWall.y-4-count/10
         if(greatWall.y<150){
             goingUp=false
         }
@@ -261,13 +261,13 @@ function moveWall(){
 }
     function moveWall2(){
     if(!goingUp){
-    greatWall2.y = greatWall2.y+4
+    greatWall2.y = greatWall2.y+4+count/10
     if(greatWall2.y>375){
         goingUp2 = true
     }
     }
     else if(goingUp){
-        greatWall2.y = greatWall2.y-4
+        greatWall2.y = greatWall2.y-4-count/10
         if(greatWall2.y<0){
             goingUp2=false
         }
