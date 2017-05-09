@@ -13,7 +13,7 @@ function movePlayer(direction){
         var oldY = player.y
         switch (direction){
             case "left":
-                player.x -= player.speed;
+                player.w -= player.speed;
                 if(player.x<0){
                     player.x = 0
                 }
